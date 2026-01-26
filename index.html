@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+  Main HTML file for Homework 1 – Web Programming
+  This page serves as my personal homepage.
+-->
+<html lang="en">
+
+<head>
+  <!-- Character encoding -->
+  <meta charset="utf-8" />
+
+  <!-- Makes the page responsive on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Short description for search engines -->
+  <meta name="description"
+    content="Personal homepage for Web Programming coursework, assignments, and contact information." />
+
+  <!-- Page title shown in browser tab -->
+  <title>Kenny Vo | Web Programming HW1</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header section with name, photo, and navigation -->
+  <header class="site-header">
+    <div class="container header-layout">
+      <!-- Profile image and intro text -->
+      <div class="profile-block">
+        <img class="profile-photo" src="images/profile.JPG" alt="Portrait photo of Kenny Vo" />
+
+        <div>
+          <h1 class="site-title">Kenny Vo</h1>
+          <p class="tagline">
+            Computer Science student at Georgia State University interested in building practical applications and clean,
+            user-friendly websites.
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation menu -->
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#coursework">Coursework</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main page content -->
+  <main class="container">
+    <!-- About Me section -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science undergraduate at Georgia State University. I am
+        interested in building software that solves real problems, especially mobile
+        applications and full-stack web projects. My goal is to continue developing
+        strong programming skills and gain hands-on experience through coursework
+        and future internships.
+      </p>
+    </section>
+
+    <!-- Coursework and assignments section -->
+    <section id="coursework" class="card">
+      <h2>Coursework and Assignments</h2>
+
+      <article class="item">
+        <h3>Web Programming</h3>
+        <ul class="link-list">
+          <li>
+            <a href="index.html">Homework 1: Personal Homepage</a>
+            <span class="muted">(this page)</span>
+          </li>
+          <li><span class="muted">Homework 2: Coming soon</span></li>
+          <li><span class="muted">Project: Coming soon</span></li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <h3>Other Courses</h3>
+        <ul class="link-list">
+          <li><span class="muted">More classes will be added later</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Hobbies and interests section -->
+    <section id="hobbies" class="card">
+      <h2>Hobbies and Interests</h2>
+      <ul class="bullets">
+        <li>Working out and fitness</li>
+        <li>Building side projects</li>
+        <li>Cars and automotive technology</li>
+        <li>Learning new programming tools</li>
+      </ul>
+    </section>
+
+    <!-- Contact information section -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p class="muted">
+        These are the best ways to reach me or see my work.
+      </p>
+
+      <ul class="contact-list">
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:voghuy17@gmail.com">voghuy17@gmail.com</a>
+        </li>
+        <li>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/kvo110" target="_blank" rel="noopener">
+            github.com/kvo110
+          </a>
+        </li>
+        <li>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            linkedin.com
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <p class="muted">© 2026 Kenny Vo. Web Programming HW1.</p>
+      <a class="back-to-top" href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+
+</html>
