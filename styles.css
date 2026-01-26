@@ -327,3 +327,32 @@ a:hover {
   color: #c4b5fd;
   outline: none;
 }
+
+/* Cover / hero section with no card styling */
+.cover-card {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 16px;
+
+  /* Center contents */
+  display: flex;
+  justify-content: center;
+}
+
+/* Portrait cover image */
+.cover-image {
+  display: block;
+
+  /* Center image */
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 420px;
+  /* keeps portrait look */
+  height: auto;
+
+  object-fit: contain;
+  border-radius: 16px;
+}
