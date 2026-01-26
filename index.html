@@ -7,30 +7,23 @@
 <html lang="en">
 
 <head>
-  <!-- Character encoding -->
   <meta charset="utf-8" />
-
-  <!-- Responsive layout for mobile and desktop -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Page description -->
   <meta name="description"
     content="Personal homepage for Web Programming coursework, assignments, and contact information." />
 
-  <!-- Page title -->
   <title>Kenny Vo | Web Programming HW1</title>
 
-  <!-- External stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Header with profile info and navigation -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-layout">
-      <!-- Profile image and intro -->
       <div class="profile-block">
-        <img class="profile-photo" src="images/profile.jpg" alt="Portrait photo of Kenny Vo" />
+        <img class="profile-photo" src="images/profile.JPG" alt="Portrait photo of Kenny Vo" />
 
         <div>
           <h1 class="site-title">Kenny Vo</h1>
@@ -41,7 +34,6 @@
         </div>
       </div>
 
-      <!-- Navigation menu -->
       <nav class="site-nav" aria-label="Primary navigation">
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
@@ -53,9 +45,8 @@
     </div>
   </header>
 
-  <!-- Main page content -->
   <main class="container">
-    <!-- About section -->
+    <!-- About -->
     <section id="about" class="card">
       <h2>About Me</h2>
       <p>
@@ -67,7 +58,7 @@
       </p>
     </section>
 
-    <!-- Coursework section -->
+    <!-- Coursework -->
     <section id="coursework" class="card">
       <h2>Coursework and Assignments</h2>
 
@@ -95,7 +86,7 @@
       </article>
     </section>
 
-    <!-- Hobbies section -->
+    <!-- Hobbies -->
     <section id="hobbies" class="card">
       <h2>Hobbies and Interests</h2>
       <ul class="bullets">
@@ -106,32 +97,23 @@
       </ul>
     </section>
 
-    <!-- Contact section with buttons -->
+    <!-- Contact -->
     <section id="contact" class="card">
       <h2>Contact</h2>
-      <p class="muted">
-        These are the best ways to reach me or view my work.
-      </p>
+      <p class="muted">Quick links:</p>
 
-      <ul class="contact-list">
-        <li>
-          <a class="contact-btn" href="mailto:voghuy17@gmail.com">
-            Email Me
-          </a>
-        </li>
+      <!-- Vertical stacked contact cards -->
+      <div class="contact-stack">
+        <a class="contact-card" href="mailto:voghuy17@gmail.com">Email</a>
 
-        <li>
-          <a class="contact-btn" href="https://github.com/kvo110" target="_blank" rel="noopener">
-            GitHub
-          </a>
-        </li>
+        <a class="contact-card" href="https://github.com/kvo110" target="_blank" rel="noopener">
+          GitHub
+        </a>
 
-        <li>
-          <a class="contact-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
+        <a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+          LinkedIn
+        </a>
+      </div>
     </section>
   </main>
 
