@@ -95,14 +95,19 @@ body::after {
   flex-wrap: wrap;
 }
 
-/* Profile section layout */
+/* When header is nav-only, center the nav */
+.header-nav-only {
+  justify-content: center;
+}
+
+/* Profile section layout (kept for flexibility, even if you remove it from HTML) */
 .profile-block {
   display: flex;
   gap: 14px;
   align-items: center;
 }
 
-/* Profile image styling */
+/* Profile image styling (kept for flexibility) */
 .profile-photo {
   width: 72px;
   height: 72px;
@@ -112,14 +117,14 @@ body::after {
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
 }
 
-/* Main page title */
+/* Main page title (kept for flexibility) */
 .site-title {
   margin: 0;
   font-size: 28px;
   letter-spacing: 0.2px;
 }
 
-/* Subtitle text */
+/* Subtitle text (kept for flexibility) */
 .tagline {
   margin-top: 4px;
   color: var(--muted);
@@ -328,31 +333,84 @@ a:hover {
   outline: none;
 }
 
-/* Cover / hero section with no card styling */
-.cover-card {
-  background: none;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  margin-top: 16px;
-
-  /* Center contents */
+/*
+  Full-screen cover section
+  We push it slightly higher so the image sits higher on load.
+*/
+.cover-screen {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
   justify-content: center;
+  padding: 6vh 0 24px 0;
+  margin: 0;
+
+  text-align: center;
 }
 
 /* Portrait cover image */
 .cover-image {
   display: block;
-
-  /* Center image */
-  margin: 0 auto;
+  margin: 0 auto 18px auto;
 
   width: 100%;
   max-width: 420px;
-  /* keeps portrait look */
   height: auto;
 
   object-fit: contain;
   border-radius: 16px;
+}
+
+/* Text that sits under the cover image */
+.cover-text {
+  max-width: 640px;
+  padding: 0 10px;
+}
+
+.cover-name {
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: 0.3px;
+}
+
+.cover-tagline {
+  margin: 8px 0 0 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+/* Small scroll hint */
+.scroll-hint {
+  margin: 26px 0 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Scroll reveal setup */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  will-change: opacity, transform;
+}
+
+/* When section is in the "view zone" */
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* When user prefers reduced motion, keep things simple */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+
+  body {
+    animation: none;
+  }
 }

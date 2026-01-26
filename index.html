@@ -2,7 +2,7 @@
 <!--
   index.html
   Homework 1 – Web Programming
-  Personal homepage with coursework, interests, and contact info.
+  Full-screen cover with centered portrait image and scroll reveal sections.
 -->
 <html lang="en">
 
@@ -19,21 +19,9 @@
 </head>
 
 <body>
-  <!-- Header -->
+  <!-- Header: navigation only -->
   <header class="site-header">
-    <div class="container header-layout">
-      <div class="profile-block">
-        <img class="profile-photo" src="images/profile.JPG" alt="Portrait photo of Kenny Vo" />
-
-        <div>
-          <h1 class="site-title">Kenny Vo</h1>
-          <p class="tagline">
-            Computer Science student at Georgia State University interested in
-            building practical applications and clean, user-friendly websites.
-          </p>
-        </div>
-      </div>
-
+    <div class="container header-layout header-nav-only">
       <nav class="site-nav" aria-label="Primary navigation">
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
@@ -46,13 +34,24 @@
   </header>
 
   <main class="container">
-    <!-- Cover / Hero card -->
-    <section class="card cover-card">
+    <!-- Full-screen cover section -->
+    <section class="cover-screen" aria-label="Cover">
       <img class="cover-image" src="images/cover.JPG" alt="Cover image representing technology and computer science" />
+
+      <!-- Name and bio moved here -->
+      <div class="cover-text">
+        <h1 class="cover-name">Kenny Vo</h1>
+        <p class="cover-tagline">
+          Computer Science student at Georgia State University interested in
+          building practical applications and clean, user-friendly websites.
+        </p>
+      </div>
+
+      <p class="scroll-hint">Scroll to continue ↓</p>
     </section>
 
     <!-- About -->
-    <section id="about" class="card">
+    <section id="about" class="card reveal">
       <h2>About Me</h2>
       <p>
         I am a Computer Science undergraduate at Georgia State University. I am
@@ -64,7 +63,7 @@
     </section>
 
     <!-- Coursework -->
-    <section id="coursework" class="card">
+    <section id="coursework" class="card reveal">
       <h2>Coursework and Assignments</h2>
 
       <article class="item">
@@ -92,7 +91,7 @@
     </section>
 
     <!-- Hobbies -->
-    <section id="hobbies" class="card">
+    <section id="hobbies" class="card reveal">
       <h2>Hobbies and Interests</h2>
       <ul class="bullets">
         <li>Working out and fitness</li>
@@ -103,14 +102,12 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="card">
+    <section id="contact" class="card reveal">
       <h2>Contact</h2>
       <p class="muted">Quick links:</p>
 
       <div class="contact-stack">
-        <a class="contact-card" href="mailto:voghuy17@gmail.com">
-          ✉️ Email
-        </a>
+        <a class="contact-card" href="mailto:voghuy17@gmail.com">✉️ Email</a>
 
         <a class="contact-card" href="https://github.com/kvo110" target="_blank" rel="noopener">
           💻 GitHub
@@ -130,6 +127,8 @@
       <a class="back-to-top" href="#top">Back to top</a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
