@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!--
-  Main HTML file for Homework 1 – Web Programming
-  This page serves as my personal homepage.
+  index.html
+  Homework 1 – Web Programming
+  Personal homepage with coursework, interests, and contact info.
 -->
 <html lang="en">
 
@@ -9,33 +10,33 @@
   <!-- Character encoding -->
   <meta charset="utf-8" />
 
-  <!-- Makes the page responsive on mobile devices -->
+  <!-- Responsive layout for mobile and desktop -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Short description for search engines -->
+  <!-- Page description -->
   <meta name="description"
     content="Personal homepage for Web Programming coursework, assignments, and contact information." />
 
-  <!-- Page title shown in browser tab -->
+  <!-- Page title -->
   <title>Kenny Vo | Web Programming HW1</title>
 
-  <!-- Link to external CSS file -->
+  <!-- External stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Header section with name, photo, and navigation -->
+  <!-- Header with profile info and navigation -->
   <header class="site-header">
     <div class="container header-layout">
-      <!-- Profile image and intro text -->
+      <!-- Profile image and intro -->
       <div class="profile-block">
-        <img class="profile-photo" src="images/profile.JPG" alt="Portrait photo of Kenny Vo" />
+        <img class="profile-photo" src="images/profile.jpg" alt="Portrait photo of Kenny Vo" />
 
         <div>
           <h1 class="site-title">Kenny Vo</h1>
           <p class="tagline">
-            Computer Science student at Georgia State University interested in building practical applications and clean,
-            user-friendly websites.
+            Computer Science student at Georgia State University interested in
+            building practical applications and clean, user-friendly websites.
           </p>
         </div>
       </div>
@@ -54,19 +55,19 @@
 
   <!-- Main page content -->
   <main class="container">
-    <!-- About Me section -->
+    <!-- About section -->
     <section id="about" class="card">
       <h2>About Me</h2>
       <p>
         I am a Computer Science undergraduate at Georgia State University. I am
-        interested in building software that solves real problems, especially mobile
-        applications and full-stack web projects. My goal is to continue developing
-        strong programming skills and gain hands-on experience through coursework
-        and future internships.
+        interested in building software that solves real problems, especially
+        mobile applications and full-stack web projects. My goal is to keep
+        improving my programming skills through coursework and gain real-world
+        experience through internships.
       </p>
     </section>
 
-    <!-- Coursework and assignments section -->
+    <!-- Coursework section -->
     <section id="coursework" class="card">
       <h2>Coursework and Assignments</h2>
 
@@ -85,51 +86,56 @@
       <article class="item">
         <h3>Other Courses</h3>
         <ul class="link-list">
-          <li><span class="muted">More classes will be added later</span></li>
+          <li>
+            <span class="muted">
+              Additional coursework will be added as the semester progresses.
+            </span>
+          </li>
         </ul>
       </article>
     </section>
 
-    <!-- Hobbies and interests section -->
+    <!-- Hobbies section -->
     <section id="hobbies" class="card">
       <h2>Hobbies and Interests</h2>
       <ul class="bullets">
         <li>Working out and fitness</li>
-        <li>Building side projects</li>
+        <li>Working on personal coding projects</li>
         <li>Cars and automotive technology</li>
         <li>Learning new programming tools</li>
       </ul>
     </section>
 
-    <!-- Contact information section -->
+    <!-- Contact section with buttons -->
     <section id="contact" class="card">
       <h2>Contact</h2>
       <p class="muted">
-        These are the best ways to reach me or see my work.
+        These are the best ways to reach me or view my work.
       </p>
 
       <ul class="contact-list">
         <li>
-          <strong>Email:</strong>
-          <a href="mailto:voghuy17@gmail.com">voghuy17@gmail.com</a>
-        </li>
-        <li>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/kvo110" target="_blank" rel="noopener">
-            github.com/kvo110
+          <a class="contact-btn" href="mailto:voghuy17@gmail.com">
+            Email Me
           </a>
         </li>
+
         <li>
-          <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
-            linkedin.com
+          <a class="contact-btn" href="https://github.com/kvo110" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </li>
+
+        <li>
+          <a class="contact-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            LinkedIn
           </a>
         </li>
       </ul>
     </section>
   </main>
 
-  <!-- Footer section -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-layout">
       <p class="muted">© 2026 Kenny Vo. Web Programming HW1.</p>
