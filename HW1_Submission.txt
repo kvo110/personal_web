@@ -1,0 +1,7 @@
+﻿Web Programming HW 1
+
+
+* Name: Huy (Kenny) G. Vo
+* Codd Server URL: https://codd.cs.gsu.edu/~hvo30/WP/HW/HW1/index.html
+* GitHub Repo Link: https://github.com/kvo110/personal_web
+* Notes: Validated through file uploads
