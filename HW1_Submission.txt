@@ -2,6 +2,6 @@
 
 
 * Name: Huy (Kenny) G. Vo
-* Codd Server URL: https://codd.cs.gsu.edu/~hvo30/WP/HW/HW1/index.html
+* Codd Server URL: https://codd.cs.gsu.edu/~hvo30/WP/HW/HW1
 * GitHub Repo Link: https://github.com/kvo110/personal_web
 * Notes: Validated through file uploads
